@@ -1,1 +1,4 @@
-"noImplicitAny": false
+{
+    "extends": "./.svelte-kit/tsconfig.json",
+    "noImplicitAny": false
+}
