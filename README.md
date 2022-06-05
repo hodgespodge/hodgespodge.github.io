@@ -1,13 +1,11 @@
-# create-svelte
+# Credits
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is powered by [`svelte`](https://github.com/sveltejs/kit) using the [`chola`](https://github.com/sharu725/chola) template.
 
 ## Initial steps
 
 ```bash
-
 npm install
-
 ```
 
 ## Developing
@@ -32,8 +30,6 @@ npm run build
 ## Deploying
 
 To deploy the app to github pages: (be sure to modify gh-pages.js to point to your repo and branch)
-
-```bash
 
 ```bash
 npm run deploy
