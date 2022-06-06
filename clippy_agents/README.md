@@ -1,0 +1,1 @@
+Clippy agents included because of the [issue](https://github.com/pi0/clippyjs/issues/10) in clippyjs
