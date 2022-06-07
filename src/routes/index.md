@@ -16,6 +16,8 @@ layout: post
 
   import { onMount } from 'svelte';
 
+  import { Button } from '@svelteuidev/core';
+
   let bonzi = null ;
   let bonzi_shown = false;
 
@@ -45,9 +47,9 @@ layout: post
 
 </script>
 
-<button on:click={bonziButton}>
+<Button variant='gradient' on:click={bonziButton}>
     Bonzi
-</button>
+</Button>
 
 <Intro />
 <Home />

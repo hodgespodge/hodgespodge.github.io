@@ -1,35 +1,43 @@
 <script>
   import site from "$lib/constants";
   import { page } from "$app/stores";
+  import Headroom from "svelte-headroom";
+
   $: currentPage = $page.url.pathname;
 </script>
 
-<header>
-  <nav>
-    <a class="logo" href="/">
-      <h1>{site.title}</h1>
-    </a>
-    <ul>
-      {#each site.menus as { url, name }}
-        <li>
-          <a
-            sveltekit:prefetch={url.match("http") ? null : true}
-            class:active={url !== "/"
-              ? currentPage.match(url)
-              : url === currentPage}
-            href={url}>{name}</a
-          >
-        </li>
-      {/each}
-    </ul>
-  </nav>
-</header>
+<Headroom duration="150ms" offset={50} tolerance={5}>
+  
+  <header>
+    <nav>
+      <a class="logo" href="/">
+        <h1>{site.title}</h1>
+      </a>
+      <ul>
+        {#each site.menus as { url, name }}
+          <li>
+            <a
+              sveltekit:prefetch={url.match("http") ? null : true}
+              class:active={url !== "/"
+                ? currentPage.match(url)
+                : url === currentPage}
+              href={url}>{name}</a
+            >
+          </li>
+        {/each}
+      </ul>
+    </nav>
+  </header>
+</Headroom>
 
 <style>
+
+
   header {
     margin-bottom: 1.5rem;
     padding: 1rem 0;
     border-bottom: 1px solid #ddd;
+
   }
   nav,
   ul {
@@ -70,3 +78,4 @@
     }
   }
 </style>
+
