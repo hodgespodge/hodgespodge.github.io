@@ -28,11 +28,24 @@ layout: post
     }
   })
 
+  let promise;
+
+  function blocking_bonzi() {
+
+    promise = bonziButton();
+  }
+
 </script>
+
 
 <Bonzi bind:this={bonziComponent} />
 
-<Button variant='gradient' on:click={bonziButton}>
+{#await promise}
+  <h style="color: red">Bonzi is now blocking</h>
+  
+{/await}
+
+<Button variant='gradient' on:click={blocking_bonzi}>
     Bonzi
 </Button>
 
