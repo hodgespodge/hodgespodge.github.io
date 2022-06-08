@@ -14,42 +14,28 @@ layout: post
   import Intro from "$lib/components/intro.md"
   import Home from "$lib/components/home.md"
 
+  import { Button } from '@svelteuidev/core';
   import { onMount } from 'svelte';
 
-  import { Button } from '@svelteuidev/core';
+  import Bonzi from "$lib/components/Bonzi.svelte"
 
-  let bonzi = null ;
-  let bonzi_shown = false;
+  let bonziButton;
+  let bonziComponent;
 
-  onMount(() => {
-      console.log('onMount');
-
-      loadBonzi();
-  });
-
-  function loadBonzi() {
-      clippy.load('Bonzi', function(agent){
-
-          bonzi = agent;
-
-      });
-  }
-
-  async function bonziButton(){
-
-      if (!bonzi_shown){
-          bonzi.show();
-          console.log('revealing bonzi');
-          bonzi_shown = true;
-      }
-  }
-
+  onMount(function(){
+    bonziButton = function(){
+      bonziComponent.bonziButton();
+    }
+  })
 
 </script>
+
+<Bonzi bind:this={bonziComponent} />
 
 <Button variant='gradient' on:click={bonziButton}>
     Bonzi
 </Button>
+
 
 <Intro />
 <Home />

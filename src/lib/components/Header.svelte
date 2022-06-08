@@ -111,7 +111,7 @@
       font-size: 4vw;
     }
     a{
-      font-size: 4vw;
+      font-size: 5vw;
     }
 
   }

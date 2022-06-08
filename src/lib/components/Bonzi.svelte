@@ -1,30 +1,35 @@
 <script>
+
     import { onMount } from 'svelte';
+    import {bonzi_shown} from '/src/stores.js'
+
     let bonzi = null ;
+    let bonzi_shown_value;
     
-    let bonzi_shown = false;
-
-    onMount(() => {
-        console.log('onMount');
-
-        loadBonzi();
+    bonzi_shown.subscribe(value => {
+        bonzi_shown_value = value;
     });
 
-    function loadBonzi() {
-        clippy.load('Bonzi', function(agent){
+    onMount(() => {
 
-            bonzi = agent;
+        if (! bonzi_shown_value) {
+            clippy.load('Bonzi', function(agent){
+                bonzi = agent;
 
-        });
-    }
+            });
+        }        
+    });
 
-    async function bonziButton(){
+    export async function bonziButton(){
 
-        if (!bonzi_shown){
+        if (!bonzi_shown_value){
             bonzi.show();
             console.log('revealing bonzi');
-            bonzi_shown = true;
+
+            bonzi_shown.set(true);
         }
     }
 </script>
+
+
 
