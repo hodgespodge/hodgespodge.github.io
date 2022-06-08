@@ -7,7 +7,6 @@
 </script>
 
 <Header />
-<div class="padding"></div>
 <div class="bodywrapper">
   <main>
     <slot />
@@ -19,9 +18,6 @@
 
 <style>
 
-  .padding {
-    padding-bottom: 4rem;
-  }
   .bodywrapper {
     max-width: 48rem;
     margin: 0 auto;

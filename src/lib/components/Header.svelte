@@ -9,36 +9,43 @@
 <!-- create a svelte header using Headroom -->
 
 <!-- <header> -->
-  <Headroom duration="150ms" offset={50} tolerance={5}>
 
-    <div class="headerColor">
-    
-    <header>
-      <nav>
-        <a class="logo" href="/">
-          <h1>{site.title}</h1>
-        </a>
-        <ul>
-          {#each site.menus as { url, name }}
-            <li>
-              <a
-                sveltekit:prefetch={url.match("http") ? null : true}
-                class:active={url !== "/"
-                  ? currentPage.match(url)
-                  : url === currentPage}
-                href={url}>{name}</a
-              >
-            </li>
-          {/each}
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <div class="headerSpace">
+
+    <Headroom duration="150ms" offset={50} tolerance={5}>
+
+      <div class="headerColor">
+      
+      <header>
+        <nav>
+          <a class="logo" href="/">
+            <h1>{site.title}</h1>
+          </a>
+          <ul>
+            {#each site.menus as { url, name }}
+              <li>
+                <a
+                  sveltekit:prefetch={url.match("http") ? null : true}
+                  class:active={url !== "/"
+                    ? currentPage.match(url)
+                    : url === currentPage}
+                  href={url}>{name}</a
+                >
+              </li>
+            {/each}
+          </ul>
+        </nav>
+      </header>
+    </div>
   </Headroom>
-  
+</div>
 <!-- </header> -->
 
 <style>
+
+  .headerSpace{
+    padding-bottom: 3rem;
+  }
 
   .headerColor {
     background-color: #34B3F1;
@@ -50,7 +57,7 @@
     margin: 0 auto;
     padding: 0 1rem;
 
-    height: 10;
+    /* height: 10; */
 
   }
 
@@ -82,11 +89,12 @@
   }
   a {
     text-decoration: none;
-    font-size: 100%;
+    /* font-size: 100%; */
     color: #000000;
   }
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) { */
+    @media screen and (max-width: 750px) {
     nav {
       display: block;
     }
@@ -96,6 +104,16 @@
     li {
       margin: 0 1rem 1rem 0;
     }
+    .headerSpace{
+      padding-bottom: 6rem;
+    }
+    h1{
+      font-size: 4vw;
+    }
+    a{
+      font-size: 4vw;
+    }
+
   }
 </style>
 
