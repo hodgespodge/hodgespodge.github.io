@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export const bonzi_shown = writable(false);
+export const bonzi_obj = writable(null);
