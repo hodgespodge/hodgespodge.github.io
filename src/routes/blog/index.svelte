@@ -34,7 +34,7 @@
 </main>
 
 <svelte:head>
-  <title>Blog | Chola</title>
+  <title>Blog | Samuel Hodges</title>
   <meta
     name="description"
     content="Chola - A minimal Sveltekit theme or template which uses mdsvex. Suitable for text based websites and blogs."
