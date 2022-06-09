@@ -4,6 +4,7 @@
   import "../../static/global.css";
   import Header from "$lib/components/Header.svelte";
   import '$lib/styles/style.css';
+  import '$lib/styles/clippy.css';
   import BonziTarget from "$lib/components/BonziTarget.svelte";
 
   import { onMount } from 'svelte';
