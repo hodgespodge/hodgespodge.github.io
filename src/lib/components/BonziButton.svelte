@@ -17,7 +17,6 @@
     });
 
     onMount(() => {
-
         if (bonzi === null) {
             clippy.load('Bonzi', function(agent){
                 bonzi = agent;
@@ -29,7 +28,7 @@
 
     const sleep = ms => new Promise(f => setTimeout(f, ms));
 
-    export async function bonziButton(){
+    export async function toggleBonzi(){
 
         buttonLoading = 'true';
 
@@ -37,11 +36,13 @@
 
         if (bonzi._animator.currentAnimationName === 'Hide' || bonzi._animator.currentAnimationName === undefined){
 
+            bonzi.stop();
             bonzi.show(false);
             await sleep(3000);
 
         } else{
 
+            bonzi.stop();
             bonzi.hide(false);
             await sleep(3000);
         }
@@ -50,7 +51,7 @@
     }
 </script>
 
-<Button class='bonzi-button' variant='gradient' on:click={bonziButton} loading={buttonLoading}>
+<Button class='bonzi-button' variant='gradient' on:click={toggleBonzi} loading={buttonLoading}>
     Bonzi
 </Button> 
 

@@ -4,16 +4,29 @@
   import "../../static/global.css";
   import Header from "$lib/components/Header.svelte";
   import '$lib/styles/style.css';
+  import BonziTarget from "$lib/components/BonziTarget.svelte";
+
+  import { onMount } from 'svelte';
+
+  let BonziTargetComponent;
+  let NewBonziTarget;
+
+  onMount(function(){
+    NewBonziTarget = function(){
+      BonziTargetComponent.BonziTarget();
+    }
+  })
+
+
 </script>
 
+<BonziTarget bind:this={BonziTargetComponent} />
 <Header />
-<div class="bodywrapper">
+<div class="bodywrapper" on:dblclick={NewBonziTarget}>
   <main>
     <slot />
   </main>
 </div>
-
-
 
 
 <style>
