@@ -1,3 +1,9 @@
+<svelte:head> 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="//cdn.rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
+</svelte:head>
+
+
 <script>
   import "../../static/reset.css";
   import "../../static/atom-dark-syntax.css";
@@ -5,25 +11,11 @@
   import Header from "$lib/components/Header.svelte";
   import '$lib/styles/style.css';
   import '$lib/styles/clippy.css';
-  import BonziTarget from "$lib/components/BonziTarget.svelte";
-
-  import { onMount } from 'svelte';
-
-  let BonziTargetComponent;
-  let NewBonziTarget;
-
-  onMount(function(){
-    NewBonziTarget = function(){
-      BonziTargetComponent.BonziTarget();
-    }
-  })
-
 
 </script>
 
-<BonziTarget bind:this={BonziTargetComponent} />
 <Header />
-<div class="bodywrapper" on:dblclick={NewBonziTarget}>
+<div class="bodywrapper">
   <main>
     <slot />
   </main>

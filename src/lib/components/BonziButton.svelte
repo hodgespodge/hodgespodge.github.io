@@ -1,8 +1,3 @@
-<svelte:head>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="//cdn.rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
-</svelte:head>
-
 <script>
 
     import { onMount } from 'svelte';
@@ -38,12 +33,14 @@
 
             bonzi.stop();
             bonzi.show(false);
+            console.log('revealing bonzi: ',bonzi._animator.currentAnimationName);
             await sleep(3000);
 
         } else{
 
             bonzi.stop();
             bonzi.hide(false);
+            console.log('revealing bonzi: ',bonzi._animator.currentAnimationName);
             await sleep(3000);
         }
 
