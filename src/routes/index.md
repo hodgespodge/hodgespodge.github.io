@@ -1,20 +1,17 @@
 ---
-title: HTML Elements
+title: Resume
 layout: post
 ---
 
 <script>
   import Intro from "$lib/components/intro.md"
-  import Home from "$lib/components/home.md"
-  import BonziButton from "$lib/components/BonziButton.svelte"
-
+  import Resume from "$lib/components/resume.md"
 </script>
 
-<BonziButton />
 <Intro />
-<Home />
+<Resume />
 
 <svelte:head>
-  <title>Home | Samuel Hodges</title>
+  <title>Resume | Samuel Hodges</title>
   <meta name="description" content="A minimal content focused markdown sveltekit template.">
 </svelte:head>

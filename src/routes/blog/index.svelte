@@ -15,6 +15,8 @@
 </script>
 
 <script>
+  import BonziButton from "$lib/components/BonziButton.svelte"
+
   export let posts;
 </script>
 
@@ -32,6 +34,8 @@
     </div>
   </article>
 </main>
+
+<BonziButton />
 
 <svelte:head>
   <title>Blog | Samuel Hodges</title>
