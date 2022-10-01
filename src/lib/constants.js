@@ -2,7 +2,7 @@ const site = {
   title: "Samuel Hodges",
   menus: [
     {
-      name: "Home",
+      name: "Resume",
       url: "/",
     },
     {

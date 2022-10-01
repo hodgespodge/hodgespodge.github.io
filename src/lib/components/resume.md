@@ -1,11 +1,10 @@
 <script>
   import BonziButton from "$lib/components/BonziButton.svelte"
+  import PDF from  "$lib/components/PDF.svelte"
 </script>
 
 
-my resume 
 
-
-
+<PDF filename='/Samuel_Hodges_Resume.pdf'/>
 
 <BonziButton />
