@@ -45,7 +45,6 @@
   },
   "homepage": "https://github.com/hodgespodge/hodgespodge.github.io#readme",
   "dependencies": {
-    "@magrinilopes/svelte-downloadfile": "^0.1.2",
     "@svelteuidev/composables": "^0.6.5",
     "@svelteuidev/core": "^0.6.5",
     "file-saver": "^2.0.5",

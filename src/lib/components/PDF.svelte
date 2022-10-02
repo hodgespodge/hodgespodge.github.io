@@ -29,15 +29,13 @@
 
 </script>
 
-<section class="settings" style="padding-bottom:1rem" >
-<div style="width:100%; display:flex; justify-content: space-between;">
-  <div style="display:flex;">
+<section class="settings">
+<div style="width:100%; display:flex">
+  <div></div>
     Page <input type="number" bind:value={num} step="1" min="1" max={max_pages} /> of {max_pages}
-  </div>
-  
-  <Button class='download-button' variant='gradient' on:click={()=>download_pdf(filename)}>
-    Download
-  </Button> 
+    <Button class='download-button' variant='gradient' on:click={()=>download_pdf(filename)}>
+      Download
+    </Button> 
 
 
 	<!-- Page <input type="number" bind:value={num} step="1" min="1" max={max_pages} /> of {max_pages} -->

@@ -1,6 +1,7 @@
 <svelte:head> 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="//cdn.rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.worker.min.js"></script> -->
 </svelte:head>
 
 
