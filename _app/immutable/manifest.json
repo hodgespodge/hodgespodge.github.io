@@ -1,12 +1,12 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-f8396d3a.js",
+    "file": "start-ee3a69d4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-f48ee692.js",
-      "_index-5ca6b76d.js",
-      "_preload-helper-8d779459.js"
+      "_preload-helper-780d7a89.js",
+      "_paths-396f020f.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -16,7 +16,7 @@
       "src/routes/blog/index.svelte",
       "src/routes/blog/secondpost.md",
       "src/routes/contact.md",
-      "_index-304adc66.js"
+      "_index-dc362062.js"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -61,14 +61,18 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-c02b4999.js",
+    "file": "pages/blog/index.svelte-ea436627.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
+      "_preload-helper-780d7a89.js",
       "_index-f48ee692.js",
-      "_BonziButton-c4ce5153.js",
-      "_index-5ca6b76d.js"
+      "_BonziButton-6a699db8.js"
+    ],
+    "dynamicImports": [
+      "src/routes/blog/firstpost.md",
+      "src/routes/blog/secondpost.md"
     ],
     "css": [
       "assets/pages/blog/index.svelte-d16c7021.css"
@@ -95,29 +99,29 @@
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-46f3d91c.js",
+    "file": "pages/index.md-932e0804.js",
     "src": "src/routes/index.md",
     "isEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_index-304adc66.js",
-      "_BonziButton-c4ce5153.js",
-      "_index-5ca6b76d.js",
-      "_preload-helper-8d779459.js"
+      "_index-dc362062.js",
+      "_BonziButton-6a699db8.js",
+      "_preload-helper-780d7a89.js",
+      "_paths-396f020f.js"
     ]
   },
   "_index-f48ee692.js": {
     "file": "chunks/index-f48ee692.js"
   },
-  "_index-5ca6b76d.js": {
-    "file": "chunks/index-5ca6b76d.js",
+  "_preload-helper-780d7a89.js": {
+    "file": "chunks/preload-helper-780d7a89.js",
     "imports": [
       "_index-f48ee692.js"
     ]
   },
-  "_preload-helper-8d779459.js": {
-    "file": "chunks/preload-helper-8d779459.js"
+  "_paths-396f020f.js": {
+    "file": "chunks/paths-396f020f.js"
   },
   "_page-e3a39613.js": {
     "file": "chunks/page-e3a39613.js",
@@ -131,25 +135,25 @@
       "_index-f48ee692.js"
     ]
   },
-  "_BonziButton-c4ce5153.js": {
-    "file": "chunks/BonziButton-c4ce5153.js",
+  "_BonziButton-6a699db8.js": {
+    "file": "chunks/BonziButton-6a699db8.js",
     "imports": [
       "_index-f48ee692.js",
-      "_index-5ca6b76d.js"
+      "_preload-helper-780d7a89.js"
     ],
     "css": [
       "assets/BonziButton-4a92a33f.css"
     ]
   },
-  "_index-304adc66.js": {
-    "file": "chunks/index-304adc66.js",
+  "_index-dc362062.js": {
+    "file": "chunks/index-dc362062.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_BonziButton-c4ce5153.js",
-      "_index-5ca6b76d.js",
-      "_preload-helper-8d779459.js"
+      "_BonziButton-6a699db8.js",
+      "_preload-helper-780d7a89.js",
+      "_paths-396f020f.js"
     ],
     "dynamicImports": [
       "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte"
@@ -162,16 +166,16 @@
     ]
   },
   "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte": {
-    "file": "chunks/PageCanvas-64197cfc.js",
+    "file": "chunks/PageCanvas-72adde24.js",
     "src": "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
-      "_index-304adc66.js",
+      "_index-dc362062.js",
       "_post-bbcb2a87.js",
-      "_BonziButton-c4ce5153.js",
-      "_index-5ca6b76d.js",
-      "_preload-helper-8d779459.js"
+      "_BonziButton-6a699db8.js",
+      "_preload-helper-780d7a89.js",
+      "_paths-396f020f.js"
     ],
     "css": [
       "assets/PageCanvas-d0a90c31.css"
