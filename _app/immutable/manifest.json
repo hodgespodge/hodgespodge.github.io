@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-99947f80.js",
+    "file": "start-4c4ea625.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -16,7 +16,7 @@
       "src/routes/blog/index.svelte",
       "src/routes/blog/secondpost.md",
       "src/routes/contact.md",
-      "_index-dc362062.js"
+      "src/routes/index.md"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -41,7 +41,7 @@
     ]
   },
   "src/routes/about.md": {
-    "file": "pages/about.md-de38af40.js",
+    "file": "pages/about.md-a75a33e6.js",
     "src": "src/routes/about.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -51,7 +51,7 @@
     ]
   },
   "src/routes/blog/firstpost.md": {
-    "file": "pages/blog/firstpost.md-2c962a65.js",
+    "file": "pages/blog/firstpost.md-0fdd3b2d.js",
     "src": "src/routes/blog/firstpost.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -61,14 +61,15 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-6c3332a1.js",
+    "file": "pages/blog/index.svelte-8ae0e439.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper-780d7a89.js",
       "_index-f48ee692.js",
-      "_BonziButton-6a699db8.js"
+      "_BonziButton-5c4fffc4.js",
+      "_TypographyProvider.styles-4c06a18d.js"
     ],
     "dynamicImports": [
       "src/routes/blog/firstpost.md",
@@ -79,17 +80,21 @@
     ]
   },
   "src/routes/blog/secondpost.md": {
-    "file": "pages/blog/secondpost.md-15a99937.js",
+    "file": "pages/blog/secondpost.md-0dee8dc7.js",
     "src": "src/routes/blog/secondpost.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
-      "_post-bbcb2a87.js"
+      "_post-bbcb2a87.js",
+      "_PDF-2c8d37c3.js",
+      "_preload-helper-780d7a89.js",
+      "_TypographyProvider.styles-4c06a18d.js",
+      "_paths-396f020f.js"
     ]
   },
   "src/routes/contact.md": {
-    "file": "pages/contact.md-90f2884a.js",
+    "file": "pages/contact.md-591610cf.js",
     "src": "src/routes/contact.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -99,15 +104,17 @@
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-932e0804.js",
+    "file": "pages/index.md-8b86966b.js",
     "src": "src/routes/index.md",
     "isEntry": true,
+    "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_index-dc362062.js",
-      "_BonziButton-6a699db8.js",
+      "_BonziButton-5c4fffc4.js",
+      "_PDF-2c8d37c3.js",
       "_preload-helper-780d7a89.js",
+      "_TypographyProvider.styles-4c06a18d.js",
       "_paths-396f020f.js"
     ]
   },
@@ -135,46 +142,51 @@
       "_index-f48ee692.js"
     ]
   },
-  "_BonziButton-6a699db8.js": {
-    "file": "chunks/BonziButton-6a699db8.js",
+  "_BonziButton-5c4fffc4.js": {
+    "file": "chunks/BonziButton-5c4fffc4.js",
+    "imports": [
+      "_index-f48ee692.js",
+      "_preload-helper-780d7a89.js",
+      "_TypographyProvider.styles-4c06a18d.js"
+    ]
+  },
+  "_TypographyProvider.styles-4c06a18d.js": {
+    "file": "chunks/TypographyProvider.styles-4c06a18d.js",
     "imports": [
       "_index-f48ee692.js",
       "_preload-helper-780d7a89.js"
     ],
     "css": [
-      "assets/BonziButton-4a92a33f.css"
+      "assets/TypographyProvider.styles-78ba6c0f.css"
     ]
   },
-  "_index-dc362062.js": {
-    "file": "chunks/index-dc362062.js",
-    "isDynamicEntry": true,
+  "_PDF-2c8d37c3.js": {
+    "file": "chunks/PDF-2c8d37c3.js",
     "imports": [
       "_index-f48ee692.js",
-      "_post-bbcb2a87.js",
-      "_BonziButton-6a699db8.js",
       "_preload-helper-780d7a89.js",
+      "_TypographyProvider.styles-4c06a18d.js",
       "_paths-396f020f.js"
     ],
     "dynamicImports": [
       "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte"
     ],
     "css": [
-      "assets/index-0949e94a.css"
+      "assets/PDF-82a15e1e.css"
     ],
     "assets": [
       "assets/pdf.worker.min-99732130.js"
     ]
   },
   "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte": {
-    "file": "chunks/PageCanvas-72adde24.js",
+    "file": "chunks/PageCanvas-5c974913.js",
     "src": "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
-      "_index-dc362062.js",
-      "_post-bbcb2a87.js",
-      "_BonziButton-6a699db8.js",
+      "_PDF-2c8d37c3.js",
       "_preload-helper-780d7a89.js",
+      "_TypographyProvider.styles-4c06a18d.js",
       "_paths-396f020f.js"
     ],
     "css": [
