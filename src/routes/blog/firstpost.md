@@ -5,9 +5,7 @@ slug: "first-post"
 description: "In this post, I will demonstrate how I created this website using the svelte framework and github pages for hosting."
 tags:
   [
-    { name: "Svelte Kit", link: "https://kit.svelte.dev/" },
-    { name: "Tailwind", link: "https://www.tailwindcss.com" },
-    { name: "Markdown", link: "https://www.markdownguide.org/" },
+
   ]
 date: "June 22 2022"
 ---
@@ -43,5 +41,22 @@ Svelte by default enforces type checking. Since I'm lazy, I didn't feel like fig
 
 Another change I made was to improve the header. The included Chola header works fine for short pages, but if the page is long, the user will need to scroll to return to the top of the page. I added a sticky header that disapears when the user scrolls down, but reappears when they scroll up. That way, the header doesn't block the screen, but is always available if the user needs it. I utilize the [svelte-headroom](https://github.com/collardeau/svelte-headroom) component in the [header file](https://github.com/hodgespodge/hodgespodge.github.io/blob/main/src/lib/components/Header.svelte).
 
+#### PDF Viewer
 
+On the [resume page](https://hodgespodge.github.io/) you hopefully noticed my beautifully rendered resume PDF. To serve the resume and any other PDFs (such as my upcoming co-authored publications) I created the PDF.svelte [component](https://github.com/hodgespodge/hodgespodge.github.io/blob/main/src/lib/components/PDF.svelte) which utilizes the [svelte-pdfjs](https://github.com/gtm-nayan/svelte-pdfjs) package in order to render the PDF. The svelte-pdfjs package in turn wraps around Mozilla's PDFJS renderer. Funnily enough, while I was in the middle of figuring out how to use svelte-pdfjs, the repo was updated and everything broke for a few hours. I also added a download button which utilizes [FileSaver.js](https://github.com/eligrey/FileSaver.js). 
+
+While I was adding PDF viewing, I also ran into difficulties with server side rendering (SSR). Apparently, Vite was attempting to build an SSR bundle which would fail because of the PDFJS renderer. Before, I was incorrectly under the assumption that the static-adapter in svelte.config.js disabled any SSR. Since the site originally worked fine with gh-pages (which doesn't do SSR to the best of my knowledge), I just assumed SSR wouldn't be a problem. After much reading through stack overflow, the only working solution I could find for disabling vite SSR building was to create a `hooks.js` file in src with the following code: 
+
+```js
+
+export const handle = async ({ event, resolve }) => {
+    const response = await resolve(event, {
+      ssr: false,
+    });
+    return response;
+};
+
+```
+
+Although this solution worked, it broke some other things so I say use with caution.
 

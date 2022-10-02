@@ -1,9 +1,7 @@
 <script lang="ts">
-	// import { browser } from '$app/environment';
 
   import workerUrl from 'pdfjs-dist/build/pdf.worker.min.js?url';
   import { setWorkerSrc } from 'svelte-pdfjs';
-  // import {DownloadFile} from '@magrinilopes/svelte-downloadfile'
   import { Button } from '@svelteuidev/core';
   import FileSaver from "file-saver";
   setWorkerSrc(workerUrl);
@@ -40,46 +38,8 @@
 
 </div>
 
-	<!-- <select bind:value={filename}>
-		<option>tackling-ts-preview-book.pdf</option>
-		<option>impatient-js-preview-book.pdf</option>
-		<option value="a.pdf">non existent file</option>
-	</select> -->
-
-	<!-- <input type="checkbox" bind:checked={renderTextLayer} /> Render text layer -->
-
-	<!-- <fieldset>
-		<legend>Dimensions</legend>
-		<select bind:value={sizing}>
-			<option value={1}>Scale: {scale}x</option>
-			<option value={2}>
-			</option>
-				Fixed height: {target_height}px
-		</select>
-
-		{#if sizing === 2}
-			<input type="range" bind:value={target_height} min="200" max="700" step="50" />
-		{:else}
-			<input type="range" bind:value={scale} min="0.5" max="4" step="0.25" />
-		{/if}
-
-		<label>
-			Rotation
-			<select bind:value={rotation}>
-				<option>0</option>
-				<option>90</option>
-				<option>180</option>
-				<option>270</option>
-			</select>
-		</label> -->
-	<!-- </fieldset> -->
 </section>
 
-<!-- {#if browser} -->
-	<!-- {base}/ isn't neceassary if your app lives at the root of your host. 
-	---- However we're serving this demo through github pages so the pdfs will
-	---- be at /svelte-pdfjs/filename.pdf
-	-->
 	<Document
 		
     file={filename}
@@ -101,7 +61,7 @@
 			/>
 		</div>
 	</Document>
-<!-- {/if} -->
+
 
 <style>
 

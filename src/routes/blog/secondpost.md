@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Second post"
-slug: "second-post"
+title: "Robot Behavior Tree Coverage"
+slug: "robot-coverage"
 description: "Placeholder"
 tags:
   [
@@ -12,3 +12,9 @@ tags:
 date: "10th April 2021"
 ---
 
+<script>
+  import PDF from  "$lib/components/PDF.svelte"
+</script>
+
+
+<PDF filename='/ICRA_2023_Canopy.pdf'/>
