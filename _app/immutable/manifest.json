@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-761bd752.js",
+    "file": "start-75fdc8ae.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -16,7 +16,7 @@
       "src/routes/blog/index.svelte",
       "src/routes/blog/secondpost.md",
       "src/routes/contact.md",
-      "_index-9e996109.js"
+      "_index-304adc66.js"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -95,13 +95,13 @@
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-c8e4e9ba.js",
+    "file": "pages/index.md-46f3d91c.js",
     "src": "src/routes/index.md",
     "isEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_index-9e996109.js",
+      "_index-304adc66.js",
       "_BonziButton-c4ce5153.js",
       "_index-5ca6b76d.js",
       "_preload-helper-8d779459.js"
@@ -141,8 +141,8 @@
       "assets/BonziButton-4a92a33f.css"
     ]
   },
-  "_index-9e996109.js": {
-    "file": "chunks/index-9e996109.js",
+  "_index-304adc66.js": {
+    "file": "chunks/index-304adc66.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
@@ -162,12 +162,12 @@
     ]
   },
   "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte": {
-    "file": "chunks/PageCanvas-358aa409.js",
+    "file": "chunks/PageCanvas-64197cfc.js",
     "src": "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
-      "_index-9e996109.js",
+      "_index-304adc66.js",
       "_post-bbcb2a87.js",
       "_BonziButton-c4ce5153.js",
       "_index-5ca6b76d.js",
