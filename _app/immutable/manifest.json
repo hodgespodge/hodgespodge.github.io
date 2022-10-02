@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-4c4ea625.js",
+    "file": "start-69c1ad34.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -61,14 +61,13 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-8ae0e439.js",
+    "file": "pages/blog/index.svelte-35f8a23f.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper-780d7a89.js",
       "_index-f48ee692.js",
-      "_BonziButton-5c4fffc4.js",
       "_TypographyProvider.styles-4c06a18d.js"
     ],
     "dynamicImports": [
@@ -94,7 +93,7 @@
     ]
   },
   "src/routes/contact.md": {
-    "file": "pages/contact.md-591610cf.js",
+    "file": "pages/contact.md-9fedcaab.js",
     "src": "src/routes/contact.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -104,14 +103,13 @@
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-8b86966b.js",
+    "file": "pages/index.md-f4818393.js",
     "src": "src/routes/index.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_BonziButton-5c4fffc4.js",
       "_PDF-2c8d37c3.js",
       "_preload-helper-780d7a89.js",
       "_TypographyProvider.styles-4c06a18d.js",
@@ -140,14 +138,6 @@
     "file": "chunks/post-bbcb2a87.js",
     "imports": [
       "_index-f48ee692.js"
-    ]
-  },
-  "_BonziButton-5c4fffc4.js": {
-    "file": "chunks/BonziButton-5c4fffc4.js",
-    "imports": [
-      "_index-f48ee692.js",
-      "_preload-helper-780d7a89.js",
-      "_TypographyProvider.styles-4c06a18d.js"
     ]
   },
   "_TypographyProvider.styles-4c06a18d.js": {
