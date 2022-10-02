@@ -9,74 +9,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 		
 		<title>hodgespodge</title>
-		<meta http-equiv="content-security-policy" content=""><title> How I made this website | Samuel Hodges</title><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" data-svelte="svelte-1bgsn3o"></script><script src="//cdn.rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js" data-svelte="svelte-1bgsn3o"></script><meta name="description" content="In this post, I will demonstrate how I created this website using the svelte framework and github pages for hosting." data-svelte="svelte-10gpl18">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-055e265d.css">
-	<link rel="modulepreload" href="/_app/immutable/start-8b0cec3a.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-8c82e640.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-d6aea762.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-2e11e0be.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/blog/firstpost.md-ebf76582.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/post-f1d30e7b.js">
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/_app/immutable/start-761bd752.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-f48ee692.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-5ca6b76d.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/preload-helper-8d779459.js">
 	</head>
 	<body>
 		<div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="headerSpace svelte-1d6knl2">
-<div class=" svelte-1iuk8bc"><div class="headerColor svelte-1d6knl2"><header class="svelte-1d6knl2"><nav class="svelte-1d6knl2"><a class="logo svelte-1d6knl2" href="/"><h1 class="svelte-1d6knl2">Samuel Hodges</h1></a>
-          <ul class="svelte-1d6knl2"><li class="svelte-1d6knl2"><a sveltekit:prefetch="true" href="/" class="svelte-1d6knl2">Resume</a>
-              </li><li class="svelte-1d6knl2"><a sveltekit:prefetch="true" href="/blog" class="svelte-1d6knl2 active">Blog</a>
-              </li><li class="svelte-1d6knl2"><a sveltekit:prefetch="true" href="/about" class="svelte-1d6knl2">About</a>
-              </li><li class="svelte-1d6knl2"><a sveltekit:prefetch="true" href="/contact" class="svelte-1d6knl2">Contact</a>
-              </li><li class="svelte-1d6knl2"><a href="https://github.com/hodgespodge" class="svelte-1d6knl2">Github</a>
-              </li></ul></nav></header></div></div></div>
-
-<div class="bodywrapper svelte-3p5nou"><main><h1>How I made this website</h1>
-<h1>Github Pages</h1>
-<p>If you’re checking out my website, there’s a good chance you’re already familiar with Github Pages. If you aren’t, here’s your introduction: <a href="https://pages.github.com/" rel="nofollow">Github Pages</a> is a service that allows you to host your website on a free domain tied to your Github account. Github Pages is a great way to host any static website (like this one). All you need is a github account. </p>
-<p>The docs for Pages recommends getting started with Jekyll to generate the static website from markdown files. You can find the docs <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll" rel="nofollow">here</a>. Additionally, there are many open source templates available for Pages.</p>
-<h2>Svelte</h2>
-<p>Instead of Jekyll, I use <a href="https://kit.svelte.dev/" rel="nofollow">Svelte Kit</a> to generate the static website. Unlike some other popular frameworks, Svelte Kit compiles its JavaScript/Svelte code into optimized vanilla JavaScript.</p>
-<p>This website is built off the <a href="https://github.com/sharu725/chola" rel="nofollow"><code>chola</code></a> template. The chola template is simple and demonstrates many of Svelte’s features. It is a good starting point for building a Svelte app.</p>
-<h2>Initial steps</h2>
-<p>Github Pages only supports static websites. Svelte is capable of generating static websites by using a static adapter. The <a href="https://github.com/hodgespodge/hodgespodge.github.io/blob/main/svelte.config.js" rel="nofollow">svelte.config.js</a> file is where you configure the build process. Mdsvex is a library which compiles markdown into html for svelte similar to Jekyll. The msdvex compilation step is included in the svelte.config.js file.</p>
-<p>Svelte Kit uses <code>npm run build</code> to compile. After compiling, I use <code>npm run deploy</code> to deploy the website to Github Pages. I use the <a href="https://github.com/hodgespodge/hodgespodge.github.io/blob/main/gh-pages.js" rel="nofollow">gh-pages.js</a> file to configure the remote branch where the compiled website is deployed. Additionally, we set the deployment branch in the Github repository’s settings in the “pages” tab.</p>
-<h2>Additions</h2>
-<h4>Bonzi</h4>
-<p>The first big addition I made to the site was adding Bonzi the purple gorilla from the <a href="https://www.smore.com/clippy-js" rel="nofollow">Clippy.js</a> JavaScript library. To achieve this, I created a bonzi button svelte component in the <code>components</code> directory. If the button is clicked once, bonzi appears. If the button is clicked again, the original bonzi disapears (even if the user has changed pages). To  achieve this, I use a writable store to ensure that bonzi globally accessible by each bonzi button. </p>
-<p>Svelte by default enforces type checking. Since I’m lazy, I didn’t feel like figuring out the types for the clippy.js library. I disable type checking by creating a <a href="https://github.com/hodgespodge/hodgespodge.github.io/blob/main/tsconfig.json" rel="nofollow">tsconfig.json</a> file with the noImplicitAny: false.</p>
-<h4>Sticky header</h4>
-<p>Another change I made was to improve the header. The included Chola header works fine for short pages, but if the page is long, the user will need to scroll to return to the top of the page. I added a sticky header that disapears when the user scrolls down, but reappears when they scroll up. That way, the header doesn’t block the screen, but is always available if the user needs it. I utilize the <a href="https://github.com/collardeau/svelte-headroom" rel="nofollow">svelte-headroom</a> component in the <a href="https://github.com/hodgespodge/hodgespodge.github.io/blob/main/src/lib/components/Header.svelte" rel="nofollow">header file</a>.</p>
-
-</main>
-</div>
-
-
-		<script type="module" data-sveltekit-hydrate="xlbvt9">
-		import { start } from "/_app/immutable/start-8b0cec3a.js";
+		<script type="module" data-sveltekit-hydrate="45h">
+		import { start } from "/_app/immutable/start-761bd752.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="xlbvt9"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
-			spa: false,
+			spa: true,
 			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 3],
-				params: {},
-				routeId: "blog/firstpost"
-			}
+			hydrate: null
 		});
 	</script></div>
 	</body>

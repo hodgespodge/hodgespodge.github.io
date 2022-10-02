@@ -1,11 +1,12 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8b0cec3a.js",
+    "file": "start-761bd752.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_index-d6aea762.js"
+      "_index-f48ee692.js",
+      "_index-5ca6b76d.js",
+      "_preload-helper-8d779459.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -15,125 +16,165 @@
       "src/routes/blog/index.svelte",
       "src/routes/blog/secondpost.md",
       "src/routes/contact.md",
-      "src/routes/index.md"
+      "_index-9e996109.js"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-2e11e0be.js",
+    "file": "pages/__layout.svelte-6886830e.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js"
+      "_index-f48ee692.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-055e265d.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-063322d5.js",
+    "file": "error.svelte-6a263499.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js"
+      "_index-f48ee692.js"
     ]
   },
   "src/routes/about.md": {
-    "file": "pages/about.md-46c63ef1.js",
+    "file": "pages/about.md-de38af40.js",
     "src": "src/routes/about.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_page-f57661b6.js"
+      "_index-f48ee692.js",
+      "_page-e3a39613.js"
     ]
   },
   "src/routes/blog/firstpost.md": {
-    "file": "pages/blog/firstpost.md-ebf76582.js",
+    "file": "pages/blog/firstpost.md-2c962a65.js",
     "src": "src/routes/blog/firstpost.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_post-f1d30e7b.js"
+      "_index-f48ee692.js",
+      "_post-bbcb2a87.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-6fe406c2.js",
+    "file": "pages/blog/index.svelte-c02b4999.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_BonziButton-17863a0c.js",
-      "_index-d6aea762.js"
+      "_index-f48ee692.js",
+      "_BonziButton-c4ce5153.js",
+      "_index-5ca6b76d.js"
     ],
     "css": [
       "assets/pages/blog/index.svelte-d16c7021.css"
     ]
   },
   "src/routes/blog/secondpost.md": {
-    "file": "pages/blog/secondpost.md-4db29e29.js",
+    "file": "pages/blog/secondpost.md-15a99937.js",
     "src": "src/routes/blog/secondpost.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_post-f1d30e7b.js"
+      "_index-f48ee692.js",
+      "_post-bbcb2a87.js"
     ]
   },
   "src/routes/contact.md": {
-    "file": "pages/contact.md-1982f4f8.js",
+    "file": "pages/contact.md-90f2884a.js",
     "src": "src/routes/contact.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_page-f57661b6.js"
+      "_index-f48ee692.js",
+      "_page-e3a39613.js"
     ]
   },
   "src/routes/index.md": {
-    "file": "pages/index.md-5da92a17.js",
+    "file": "pages/index.md-c8e4e9ba.js",
     "src": "src/routes/index.md",
     "isEntry": true,
-    "isDynamicEntry": true,
     "imports": [
-      "_index-8c82e640.js",
-      "_post-f1d30e7b.js",
-      "_BonziButton-17863a0c.js",
-      "_index-d6aea762.js"
+      "_index-f48ee692.js",
+      "_post-bbcb2a87.js",
+      "_index-9e996109.js",
+      "_BonziButton-c4ce5153.js",
+      "_index-5ca6b76d.js",
+      "_preload-helper-8d779459.js"
     ]
   },
-  "_index-8c82e640.js": {
-    "file": "chunks/index-8c82e640.js"
+  "_index-f48ee692.js": {
+    "file": "chunks/index-f48ee692.js"
   },
-  "_index-d6aea762.js": {
-    "file": "chunks/index-d6aea762.js",
+  "_index-5ca6b76d.js": {
+    "file": "chunks/index-5ca6b76d.js",
     "imports": [
-      "_index-8c82e640.js"
+      "_index-f48ee692.js"
     ]
   },
-  "_page-f57661b6.js": {
-    "file": "chunks/page-f57661b6.js",
+  "_preload-helper-8d779459.js": {
+    "file": "chunks/preload-helper-8d779459.js"
+  },
+  "_page-e3a39613.js": {
+    "file": "chunks/page-e3a39613.js",
     "imports": [
-      "_index-8c82e640.js"
+      "_index-f48ee692.js"
     ]
   },
-  "_post-f1d30e7b.js": {
-    "file": "chunks/post-f1d30e7b.js",
+  "_post-bbcb2a87.js": {
+    "file": "chunks/post-bbcb2a87.js",
     "imports": [
-      "_index-8c82e640.js"
+      "_index-f48ee692.js"
     ]
   },
-  "_BonziButton-17863a0c.js": {
-    "file": "chunks/BonziButton-17863a0c.js",
+  "_BonziButton-c4ce5153.js": {
+    "file": "chunks/BonziButton-c4ce5153.js",
     "imports": [
-      "_index-8c82e640.js",
-      "_index-d6aea762.js"
+      "_index-f48ee692.js",
+      "_index-5ca6b76d.js"
     ],
     "css": [
       "assets/BonziButton-4a92a33f.css"
+    ]
+  },
+  "_index-9e996109.js": {
+    "file": "chunks/index-9e996109.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f48ee692.js",
+      "_post-bbcb2a87.js",
+      "_BonziButton-c4ce5153.js",
+      "_index-5ca6b76d.js",
+      "_preload-helper-8d779459.js"
+    ],
+    "dynamicImports": [
+      "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte"
+    ],
+    "css": [
+      "assets/index-0949e94a.css"
+    ],
+    "assets": [
+      "assets/pdf.worker.min-99732130.js"
+    ]
+  },
+  "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte": {
+    "file": "chunks/PageCanvas-358aa409.js",
+    "src": "node_modules/svelte-pdfjs/PDFViewer/PageInternals/PageCanvas.svelte",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-f48ee692.js",
+      "_index-9e996109.js",
+      "_post-bbcb2a87.js",
+      "_BonziButton-c4ce5153.js",
+      "_index-5ca6b76d.js",
+      "_preload-helper-8d779459.js"
+    ],
+    "css": [
+      "assets/PageCanvas-d0a90c31.css"
     ]
   }
 }
