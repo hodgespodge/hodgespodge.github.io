@@ -6,7 +6,7 @@ layout: page
 
 Thanks for visting my website!
 
-- Firstly, I'm a North Carolina native from the Asheville area. Currently I'm enjoying living in the Triangle area. 
+I'm a North Carolina native from the Asheville area. Currently I'm enjoying living in the Triangle area. This website is mostly for professional stuff so the personal information might be a bit limited. Shoot me a message on LinkedIn and we can chat.
 
 ## Education
 
