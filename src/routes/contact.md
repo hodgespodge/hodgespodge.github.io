@@ -8,7 +8,7 @@ layout: page
 
 City of Residence: The Triangle (Raleigh, Cary, Durham, Chapel Hill) North Carolina
 
-To avoid potential spam, I ask that you please first reach out via [LinkedIn](www.linkedin.com/in/samuel-hodges-software-engineer).
+To avoid potential spam, I ask that you please first reach out via [LinkedIn](https://www.linkedin.com/in/samuel-hodges-software-engineer/).
 
 
 
