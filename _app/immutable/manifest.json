@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-a16dab7f.js",
+    "file": "start-d04adc90.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -53,31 +53,27 @@
     ]
   },
   "src/routes/blog/firstpost.md": {
-    "file": "pages/blog/firstpost.md-6904e63e.js",
+    "file": "pages/blog/firstpost.md-8cb70850.js",
     "src": "src/routes/blog/firstpost.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f48ee692.js",
       "_post-bbcb2a87.js",
-      "_BonziButton-ab8ca82a.js",
       "_index-5ca6b76d.js",
       "_TypographyProvider.styles-8e77301e.js",
       "_Button-2696f64b.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-5f4d674e.js",
+    "file": "pages/blog/index.svelte-ff53d8af.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper-60cab3ee.js",
       "_index-f48ee692.js",
-      "_BonziButton-ab8ca82a.js",
-      "_index-5ca6b76d.js",
-      "_TypographyProvider.styles-8e77301e.js",
-      "_Button-2696f64b.js"
+      "_TypographyProvider.styles-8e77301e.js"
     ],
     "dynamicImports": [
       "src/routes/blog/firstpost.md",
@@ -170,15 +166,6 @@
     "file": "chunks/post-bbcb2a87.js",
     "imports": [
       "_index-f48ee692.js"
-    ]
-  },
-  "_BonziButton-ab8ca82a.js": {
-    "file": "chunks/BonziButton-ab8ca82a.js",
-    "imports": [
-      "_index-f48ee692.js",
-      "_index-5ca6b76d.js",
-      "_TypographyProvider.styles-8e77301e.js",
-      "_Button-2696f64b.js"
     ]
   },
   "_TypographyProvider.styles-8e77301e.js": {
